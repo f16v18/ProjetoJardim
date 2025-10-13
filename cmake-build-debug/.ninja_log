@@ -1,0 +1,11 @@
+# ninja log v6
+22	3170	7820735009043462	CMakeFiles/Projeto.dir/main.cpp.obj	e64f77786533a544
+14	752	7817394738132216	CMakeFiles/Projeto.dir/src/Jardineiro.cpp.obj	4f7c31e5de5da2fa
+35	3149	7820735009157759	CMakeFiles/Projeto.dir/src/Ferramenta.cpp.obj	8983de79d4449ed3
+18	943	7817394738177614	CMakeFiles/Projeto.dir/src/PosicaoSolo.cpp.obj	d2439ea2b4836634
+23	751	7817394738219121	CMakeFiles/Projeto.dir/src/Planta.cpp.obj	9335ac4a729d9b5c
+10	857	7817394738088451	CMakeFiles/Projeto.dir/src/Jardim.cpp.obj	fe61ca9916b86513
+3170	3822	7820735040512164	Projeto.exe	30eb5a3d23d82923
+10	866	7820744398771838	CMakeFiles/Projeto.dir/main.cpp.obj	e64f77786533a544
+9	984	7820744877240383	CMakeFiles/Projeto.dir/src/Simulador.cpp.obj	dcbde47954acd83d
+986	1329	7820744887004240	Projeto.exe	154005486575711f
