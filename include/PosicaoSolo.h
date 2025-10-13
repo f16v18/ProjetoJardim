@@ -20,4 +20,4 @@ public:
     PosicaoSolo();
 };
 
-#endif //PROJETO_POSICAOSOLO_H
+#endif

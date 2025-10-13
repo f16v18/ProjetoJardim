@@ -69,4 +69,4 @@ class Settings {
     };
 };
 
-#endif //SETTINGS_SETTINGS_H
+#endif

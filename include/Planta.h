@@ -17,4 +17,4 @@ public:
     virtual char getCharRepresentacao() const = 0;
 };
 
-#endif //MEUJARDIM_PLANTAS_H
+#endif

@@ -25,4 +25,4 @@ private:
     void processarLinhaComando(const std::string& linha);
 };
 
-#endif //SIMULADOR_H
+#endif
