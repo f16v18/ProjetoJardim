@@ -50,7 +50,6 @@ void Jardim::exibirJardim() const {
     for (int i = 0; i < numLinhas; ++i) {
         std::cout << (char)('A' + i) << " ";
         for (int j = 0; j < numColunas; ++j) {
-            // Para a Meta 1, a grelha estará sempre vazia
             std::cout << ' ';
         }
         std::cout << std::endl;
