@@ -59,3 +59,15 @@ void Jardim::exibirJardim() const {
 bool Jardim::isJardimCriado() const {
     return jardimCriado;
 }
+
+void Jardim::resetaPlantasPorInstante() {
+    PlantasPorInstante = 0;
+}
+
+bool Jardim::podePlantar() const {
+    return PlantasPorInstante < 2;
+}
+
+void Jardim::incrementaPlantasPorInstante() {
+    ++PlantasPorInstante;
+}

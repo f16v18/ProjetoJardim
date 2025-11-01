@@ -33,7 +33,6 @@ void Simulador::processarLinhaComando(const std::string& linha) {
     std::string comando;
     iss >> comando;
 
-
     if (comando == "fim") {
         std::cout << "Encerrando o simulador." << std::endl;
         aExecutar = false;
@@ -75,6 +74,7 @@ void Simulador::processarLinhaComando(const std::string& linha) {
         iss >> n;
         if (n > 0) {
             std::cout << "Comando 'avanca' validado para " << n << " instante(s)." << std::endl;
+            jardim.resetaPlantasPorInstante();
         } else {
             std::cout << "Erro: O numero de instantes deve ser positivo." << std::endl;
         }
@@ -90,9 +90,15 @@ void Simulador::processarLinhaComando(const std::string& linha) {
             std::cout << "Erro: Sintaxe. Uso: " << comando << " <l><c>" << std::endl;
         }
     } else if (comando == "planta") {
+        if (!jardim.podePlantar()) {
+            std::cout << "Erro: Nao e permitido plantar mais de 2 plantas no mesmo instante." << std::endl;
+            return;
+        }
+
         std::string coords, tipoStr;
         if (iss >> coords >> tipoStr && coords.length() == 2 && tipoStr.length() == 1) {
             std::cout << "Comando 'planta' validado para " << coords << " com tipo '" << tipoStr[0] << "'." << std::endl;
+            jardim.incrementaPlantasPorInstante(); // Increment the plant count
         } else {
             std::cout << "Erro: Sintaxe. Uso: planta <l><c> <tipo>" << std::endl;
         }

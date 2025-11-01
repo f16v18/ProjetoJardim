@@ -1,19 +1,20 @@
-#ifndef PROJETO_POSICAOSOLO_H
-#define PROJETO_POSICAOSOLO_H
+//
+// Created by 2003j on 09/10/2025.
+//
 
+#ifndef PLANTA_H
+#define PLANTA_H
 
-class Planta;
-class Ferramenta;
-
-class PosicaoSolo {
-private:
-    int agua;
-    int nutrientes;
-    Planta* planta;
-    Ferramenta* ferramenta;
+class Planta {
+protected:
+    int id;
+    int posLinha, posColuna;
+    char charRepresentacao;
 
 public:
-    PosicaoSolo();
+    Planta(int linha, int coluna, char representacao);
+    virtual ~Planta() = default;
+    virtual char getCharRepresentacao() const = 0;
 };
 
 #endif
